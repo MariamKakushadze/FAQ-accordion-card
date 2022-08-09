@@ -48,6 +48,7 @@
         color: #4B4C5F;
         cursor:pointer;
     }
+   
     .answer{
         font-size: 12px;
         line-height: 18px;
@@ -76,6 +77,17 @@
     }
     .desktop{
         display:none;
+    }
+    .active, .question:hover{
+        font-weight: 700;
+        color: #1E1F36;
+        transition:0.4s ease-out;
+    }
+    .active{
+        padding-bottom: 0;
+    }
+    .active img{
+        transform: matrix(1, 0, 0, -1, 0, 0);
     }
 
    @media only screen and (min-width: 1300px){
