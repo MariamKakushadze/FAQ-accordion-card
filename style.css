@@ -93,20 +93,24 @@
         transform: matrix(1, 0, 0, -1, 0, 0);
     }
 
+
    @media only screen and (min-width: 1300px){
+    
     .container{
         padding:0;
-        max-width:1200px; 
-        max-height:550px;
+        max-width:1000px; 
     }
     .card{
         margin-top:100px;
         display:flex;
         flex-direction: row;
+        background-image: url(images/illustration-woman-online-desktop.svg),url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position:  -58px 85px,-550px -282px;
     }
     .text-container{
-        width:70%;
-        margin:65px 100px 0 0;
+        width:40%;
+        margin:40px 100px 50px 0;
     }
     .mobile{
         display:none;
@@ -118,23 +122,7 @@
     }
     .img-container{
         position:relative;
-        overflow:hidden;
-    }
-    .girl-img{
-        margin:0;
-        width:480px;
-        position:absolute;
-        top:18%;
-        left:-13%;
-
-    }
-    .shade{
-        width: 965px;
-        height: 944px;
-        position: relative;
-        left: -103%;
-        top: -41%;
-        overflow: hidden; 
+        left: -33.5%;
     }
     .question{
         font-size: 14px;
@@ -143,15 +131,29 @@
     .headding{
         text-align: left;
     }
+   
     .box-img{
-        position:absolute;
-        top: 42%;
-        left: -16%;
-        width: 180px;
-        height: 212px;
-        z-index: 3;
-        overflow: overlay;
+       position:absolute;
+       top: 44%;
+       width: 180px;
+       height: 178px;  
 
     }
     
+   }
+   @media only screen and (min-width: 1400px){
+    .box-img{
+        top: 40%;
+    }
+     
+   }
+   @media only screen and (min-width: 1600px){
+    .box-img{
+        top: 38%;
+    }
+   }
+   @media only screen and (min-width: 1800px){
+    .box-img{
+        top: 36%;
+    }
    }
